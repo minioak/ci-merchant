@@ -729,7 +729,7 @@ abstract class Merchant_driver
 <html>
 <head><title>Redirecting...</title></head>
 <body onload="document.forms[0].submit();">
-	<form name="payment" action="<?php echo htmlspecialchars($url); ?>" method="post">
+	<form name="payment" action="<?php echo htmlspecialchars($url); ?>" target="_top" method="post">
 		<p><?php echo htmlspecialchars($message); ?></p>
 		<p>
 			<?php foreach ($data as $key => $value): ?>
